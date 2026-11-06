@@ -250,3 +250,4 @@ code { font: 12.5px var(--mono); background: var(--bg-2); border: 1px solid var(
 .keys .kicon { font: 500 12px var(--mono); }
 .keys a.mono { font-size: 12.5px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
 .result .hint { overflow-wrap: anywhere; }
+.actions button { white-space: normal; text-align: left; line-height: 1.3; }
