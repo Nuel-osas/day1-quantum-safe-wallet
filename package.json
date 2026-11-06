@@ -1,0 +1,30 @@
+{
+  "name": "day1-quantum-safe-wallet",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "rehearse": "tsx scripts/rehearse.ts",
+    "e2e": "tsx scripts/e2e-browser.ts"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@mysten/sui": "2.39.0",
+    "@scure/bip39": "^2.0.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "@vitejs/plugin-react": "^4.7.0",
+    "puppeteer-core": "^25.13.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "6"
+  }
+}
