@@ -8,7 +8,8 @@
     "build": "tsc --noEmit -p tsconfig.json && vite build",
     "preview": "vite preview",
     "rehearse": "tsx scripts/rehearse.ts",
-    "e2e": "tsx scripts/e2e-browser.ts"
+    "e2e": "tsx scripts/e2e-browser.ts",
+    "slides:pdf": "tsx teaching/render.ts"
   },
   "engines": { "node": ">=22" },
   "dependencies": {
