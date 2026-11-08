@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "rehearse": "tsx scripts/rehearse.ts",
     "e2e": "tsx scripts/e2e-browser.ts",
+    "slides": "node teaching/generate-slides.cjs",
     "slides:pdf": "tsx teaching/render.ts"
   },
   "engines": { "node": ">=22" },
