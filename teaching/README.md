@@ -1,6 +1,6 @@
 # Teaching: Day 1 Deck and Speaker Notes
 
-- `Day1_Quantum_Safe_Sui.pptx`: 13 editable slides with presenter notes.
+- `Day1_Quantum_Safe_Sui.pptx`: 14 editable slides with presenter notes.
 - `Day1_Quantum_Safe_Sui.pdf`: the same deck rendered with the real fonts.
 - `day1-speaker-notes.md`: before-class checks, run of show, and the notes for every slide.
 
