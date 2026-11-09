@@ -42,9 +42,9 @@ d.statement({
 	eyebrow: 'THE ONE IDEA',
 	line1: 'Quantum breaks keys, not addresses.',
 	line2: 'So change the key,\nkeep the address.',
-	body: "Ed25519, secp256k1 and secp256r1 all fall to Shor's algorithm on a large enough quantum computer. Every signature you send publishes your public key, so accounts that have signed are already exposed. Sui adds a post-quantum key, ML-DSA-65, and aliases that let an account switch to it.",
+	body: "Ed25519, secp256k1 and secp256r1 all fall to Shor's algorithm on a large enough quantum computer. That is true of every major chain, not just Sui. Sui already has a post-quantum key, ML-DSA-65, and a way to switch to it without changing your address. It runs on devnet today.",
 	note: {
-		explain: "A Sui address is a hash of a scheme flag and a public key. The attacker wants the private key, and Shor's algorithm recovers it from the public key for every elliptic curve scheme Sui supports today: Ed25519, secp256k1 and secp256r1, which passkeys also use. The address is not the weak point. So the fix is to let the address accept a different kind of key.",
+		explain: "A Sui address is a hash of a scheme flag and a public key. The attacker wants the private key, and Shor's algorithm recovers it from the public key for every elliptic curve scheme Sui supports today: Ed25519, secp256k1 and secp256r1, which passkeys also use. The address is not the weak point. So the fix is to let the address accept a different kind of key. Say it plainly: no machine can do this today, and every major chain uses the same curves. This class is about being early, not about Sui being at risk.",
 		show: 'Draw on the board: address = hash(flag, public key). Signing reveals the public key. A quantum computer turns public key into private key. Then draw the fix: an alias list on the address, the new key added, the old key removed.',
 		ask: 'Machines that can do this do not exist yet. Why act now?',
 		answer: 'Public keys are already onchain for every account that has signed, so the target list exists today. Moving millions of accounts takes years, and long-lived value needs a path before the machine arrives.',
@@ -358,7 +358,7 @@ Keys, Dollars and Bitcoin, Day 1, SuiHub Lagos. Deck: teaching/Day1_Quantum_Safe
 
 | Slides | Minutes | What happens |
 |---|---|---|
-| 1 to 2 | 10 | Cover, the threat and the one idea |
+| 1 to 2 | 10 | Cover, why keys need a way out, the one idea |
 | 3 to 4 | 15 | What ML-DSA-65 is, where it is live |
 | 5 to 6 | 15 | One phrase, two keys; create a wallet in the app |
 | 7 to 9 | 25 | The migration, live in the app, then the code |

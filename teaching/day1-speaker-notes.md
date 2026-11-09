@@ -13,7 +13,7 @@ Keys, Dollars and Bitcoin, Day 1, SuiHub Lagos. Deck: teaching/Day1_Quantum_Safe
 
 | Slides | Minutes | What happens |
 |---|---|---|
-| 1 to 2 | 10 | Cover, the threat and the one idea |
+| 1 to 2 | 10 | Cover, why keys need a way out, the one idea |
 | 3 to 4 | 15 | What ML-DSA-65 is, where it is live |
 | 5 to 6 | 15 | One phrase, two keys; create a wallet in the app |
 | 7 to 9 | 25 | The migration, live in the app, then the code |
@@ -45,7 +45,7 @@ https://day1-quantum-safe-wallet.vercel.app ; https://github.com/Nuel-osas/day1-
 ## 02. Quantum breaks keys, not addresses.
 
 EXPLAIN
-A Sui address is a hash of a scheme flag and a public key. The attacker wants the private key, and Shor's algorithm recovers it from the public key for every elliptic curve scheme Sui supports today: Ed25519, secp256k1 and secp256r1, which passkeys also use. The address is not the weak point. So the fix is to let the address accept a different kind of key.
+A Sui address is a hash of a scheme flag and a public key. The attacker wants the private key, and Shor's algorithm recovers it from the public key for every elliptic curve scheme Sui supports today: Ed25519, secp256k1 and secp256r1, which passkeys also use. The address is not the weak point. So the fix is to let the address accept a different kind of key. Say it plainly: no machine can do this today, and every major chain uses the same curves. This class is about being early, not about Sui being at risk.
 
 SHOW / DO
 Draw on the board: address = hash(flag, public key). Signing reveals the public key. A quantum computer turns public key into private key. Then draw the fix: an alias list on the address, the new key added, the old key removed.
